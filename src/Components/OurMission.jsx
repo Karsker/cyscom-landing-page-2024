@@ -1,13 +1,37 @@
-import React from "react";
-import "./OurMission.css";
-import Blog from "/assets/images/our-mission/Blogs.png";
-import Events from "/assets/images/our-mission/Events.png";
-import OpenSource from "/assets/images/our-mission/Open Source.png";
-import Innovation from "/assets/images/our-mission/Innovation.png";
+import React from 'react'
+import './OurMission.css'
+import Blog from '/assets/images/our-mission/Blogs.png'
+import Events from '/assets/images/our-mission/Events.png'
+import OpenSource from '/assets/images/our-mission/Open Source.png'
+import Innovation from '/assets/images/our-mission/Innovation.png'
+import { motion, useAnimation, useInView } from 'framer-motion'
+import { useEffect, useRef } from 'react'
+
 function OurMission() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {once: true});
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    }
+
+  },[isInView]);
+
   return (
     <>
-      <div className="our-mission">
+    <div ref={ref}>
+    <motion.div className="our-mission"
+        variants = {{
+          hidden: {opacity: 0, y: 75},
+          visible: {opacity: 1, y: 0},
+        }}
+
+        initial = "hidden"
+        animate = {mainControls}
+        transition={{duration: 0.25, delay: 0.25}}
+      >
         <div className="ourmission-container">
           <div className="container1">
             <div className="card">
@@ -59,9 +83,12 @@ function OurMission() {
             about cybersecurity.
           </p>
         </div>
-      </div>
+      </motion.div>
+    </div>
+      
+     
     </>
-  );
+  )
 }
 
-export default OurMission;
+export default OurMission
