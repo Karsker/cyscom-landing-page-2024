@@ -106,32 +106,32 @@ const pictures = [
     },
     {
       id:22,
-      imgURL:'/assets/images/events/inauguration/1.JPG',
+      imgURL:'/assets/images/events/inauguration/1.jpg',
       text:'Inauguration'
     },
     {
       id:23,
-      imgURL:'/assets/images/events/inauguration/2.JPG',
+      imgURL:'/assets/images/events/inauguration/2.jpg',
       text:'Inauguration'
     },
     {
       id:24,
-      imgURL:'/assets/images/events/inauguration/3.JPG',
+      imgURL:'/assets/images/events/inauguration/3.jpg',
       text:'Inauguration'
     },
     {
       id:25,
-      imgURL:'/assets/images/events/inauguration/4.JPG',
+      imgURL:'/assets/images/events/inauguration/4.jpg',
       text:'Inauguration'
     },
     {
       id:26,
-      imgURL:'/assets/images/events/inauguration/5.JPG',
+      imgURL:'/assets/images/events/inauguration/5.jpg',
       text:'Inauguration'
     },
     {
       id:27,
-      imgURL:'/assets/images/events/inauguration/6.JPG',
+      imgURL:'/assets/images/events/inauguration/6.jpg',
       text:'Inauguration'
     },
     {
