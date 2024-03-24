@@ -2,12 +2,12 @@ import React,{ useState }  from 'react'
 import pictures from './Pictures.jsx'
 
 //The menu items
-const MenuItems=["All","HackOverflow 2022","Cyber Defenders 2022","2020HACK","ICRTAC 2018","ICRTAC 2019","Inauguration","OPENGOV","Tetraflip","WASPCON"];
+const MenuItems=["HackOverflow 2022","Cyber Defenders 2022","2020HACK","ICRTAC 2018","ICRTAC 2019","Inauguration","OPENGOV","Tetraflip","WASPCON"];
 
 const PictureCard = () => {
   
 
-  const[activeMenu, setActiveMenu] = useState("All");
+  const[activeMenu, setActiveMenu] = useState("HackOverflow 2022");
 
 
 

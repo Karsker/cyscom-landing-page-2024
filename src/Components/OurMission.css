@@ -133,12 +133,19 @@ body {
     .ourmission-container .container2 {
       width: 100%;
       height: auto;
+      /* flex-direction: row; */
     }
   
     .ourmission-title {
       width: 100%;
       text-align: center;
       height: auto;
+    }
+
+    .card {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
   }
   
