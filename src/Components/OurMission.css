@@ -1,0 +1,144 @@
+body {
+    background-color: rgba(248, 248, 248, 1);
+  }
+  .our-mission {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .ourmission-container {
+    display: flex;
+  }
+  
+  .ourmission-container .container1 {
+    width: 300px;
+    height: 771px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .ourmission-container .container2 {
+    width: 300px;
+    height: 771px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .ourmission-container .container1 .card,
+  .ourmission-container .container2 .card {
+    background: transparent;
+    width: 232px;
+    height: 240px;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px;
+    border-radius: 12px;
+    background-color: rgba(248, 248, 248, 1);
+    padding: 16px;
+  }
+  .ourmission-container .container1 .card:hover,
+  .ourmission-container .container2 .card:hover {
+    background-color: white;
+  }
+  
+  .our-mission .card img {
+    /* border: solid red 2px; */
+    width: 80px;
+    height: 80px;
+    /* padding-left: 16px; */
+  }
+  
+  .our-mission .card h3 {
+    color: black;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold ;
+    /* padding-left: 16px; */
+    font-family: "Inter", sans-serif;
+  }
+  
+  .our-mission .card p {
+    color: rgba(90, 90, 90, 1);
+    letter-spacing: normal;
+    margin: 0;
+    /* padding-left: 16px; */
+    /* padding-right: 16px; */
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+  }
+  .ourmission-title {
+    width: 440px;
+    height: 286px;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    text-align: right;
+  }
+  
+  .ourmission-title h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 75px;
+    line-height: 0.9;
+    font-family: "Inter", sans-serif;
+  }
+  .ourmission-title h1 .our {
+    color: black;
+  }
+  .ourmission-title h1 .mission {
+    color: rgba(108, 108, 108, 1);
+  }
+  
+  .ourmission-title p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(120, 120, 120, 1);
+    line-height: normal;
+    font-family: "Inter", sans-serif;
+  }
+  
+  @media screen and (max-width: 1020px) {
+    .our-mission {
+      flex-direction: column-reverse;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  
+    .ourmission-container .container1,
+    .ourmission-container .container2 {
+      width: 100%;
+      height: auto;
+    }
+  
+    .ourmission-title {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 600px) and (min-width: 0px) {
+    .ourmission-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .ourmission-container .container1,
+    .ourmission-container .container2 {
+      width: 100%;
+      height: auto;
+    }
+  
+    .ourmission-title {
+      width: 100%;
+      text-align: center;
+      height: auto;
+    }
+  }
+  

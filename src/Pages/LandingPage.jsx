@@ -3,6 +3,7 @@ import Sample from '../Components/Sample'
 import { Helmet } from 'react-helmet-async'
 import Footer from '../Components/Footer'
 import PictureGallery from '../Components/PictureGallery'
+import OurMission from '../Components/OurMission'
 
 const LandingPage = () => {
   return (
@@ -12,6 +13,7 @@ const LandingPage = () => {
       </Helmet>
 
       {/* Your code goes here */}
+      <OurMission />
       <PictureGallery />
       <Footer />
       {/* <Sample /> */}
